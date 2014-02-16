@@ -1,0 +1,123 @@
+.text_button a { width:100%; display: block;
+  text-decoration:none;
+  background-color: transparent;
+ }
+
+.text_button a:visited {
+ }
+
+.text_button a.nmh,
+.text_button a.pm,
+.text_button a.pmh,
+.text_button a:hover {
+  text-decoration: underline;
+ }
+
+.text_button a.cm,
+.text_button a.cmh,
+.text_button a:active {
+ }
+
+.text_button li { list-style:none outside;
+     margin-right:0px; margin-bottom:0px; }
+
+.text_link a { width:100%;
+  text-decoration:none;
+  background-color: transparent;
+ }
+
+.text_link a:visited {
+ }
+
+.text_link a.nmh,
+.text_link a.pm,
+.text_link a.pmh,
+.text_link a:hover {
+  text-decoration: underline;
+ }
+
+.text_link a.cm,
+.text_link a.cmh,
+.text_link a:active {
+ }
+
+.text_link li { list-style:disc outside;
+     margin-right:0px; margin-bottom:0px; }
+
+.layergroup_button a { width:100%; display: block;
+  text-decoration:none;
+  background-color: transparent;
+ }
+
+.layergroup_button a:visited {
+ }
+
+.layergroup_button a.nmh,
+.layergroup_button a.pm,
+.layergroup_button a.pmh,
+.layergroup_button a:hover {
+  font-style: italic;
+ }
+
+.layergroup_button a.cm,
+.layergroup_button a.cmh,
+.layergroup_button a:active {
+ }
+
+.layergroup_button li { list-style:none outside;
+     margin-right:0px; margin-bottom:0px; }
+
+.vertical_menu a { width:100%; display: block;
+  text-decoration:none;
+  background-color: transparent;
+ }
+
+.vertical_menu a:visited {
+ }
+
+.vertical_menu a.nmh,
+.vertical_menu a.pm,
+.vertical_menu a.pmh,
+.vertical_menu a:hover {
+  text-decoration: underline;
+ }
+
+.vertical_menu a.cm,
+.vertical_menu a.cmh,
+.vertical_menu a:active {
+ }
+
+.vertical_menu li { list-style:none outside;
+     margin-right:0px; margin-bottom:0px; }
+
+.horizontal_menu a { width:100%; display: block;
+  text-decoration:none;
+  background-color: transparent;
+ }
+
+.horizontal_menu a:visited {
+ }
+
+.horizontal_menu a.nmh,
+.horizontal_menu a.pm,
+.horizontal_menu a.pmh,
+.horizontal_menu a:hover {
+  text-decoration: underline;
+ }
+
+.horizontal_menu a.cm,
+.horizontal_menu a.cmh,
+.horizontal_menu a:active {
+ }
+
+.horizontal_menu li { list-style:none outside;
+     margin-right:0px; margin-bottom:0px; }
+
+
+.-none- {  }
+
+.compat {   box-shadow: 1px 1px 4px #000000;
+  -webkit-box-shadow: 1px 1px 4px #000000;
+  -moz-box-shadow: 1px 1px 4px #000000;
+ }
+

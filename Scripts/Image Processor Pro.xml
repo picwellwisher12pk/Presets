@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageProcessorProSettings>
+  <input source="bridge"/>
+  <output path="~/Desktop/Output Folder" subfolder="true" keepStructure="false"/>
+  <taskList>
+    <task enabled="true" subfolderName="Set 1" colorProfile="sRGB IEC61966-2.1">
+      <saveOptions fileSaveType="jpg" jpgQuality="10" jpgEmbedColorProfile="true" jpgFormat="Standard" saveForWeb="false"/>
+      <resizeOpts enabled="true" width="800" widthUnits="pixels" height="800" heightUnits="pixels" resolution="72" resolutionUnits="pixels/inch" scale="true" resampleMethod="bicubic"/>
+      <action enabled="false" when="Before Image Resize" set="Default Actions" name="Sepia Toning (layer)"/>
+      <namingOptions startingSerial="1">Name,_,twoDigit,lowerCaseExtension</namingOptions>
+    </task>
+    <task enabled="true" subfolderName="Set 2" colorProfile="Same as Source">
+      <saveOptions fileSaveType="tiff" tiffByteOrder="MacOS" tiffEncoding="None" tiffEmbedColorProfile="true"/>
+      <resizeOpts enabled="true" width="1200" widthUnits="pixels" height="1200" heightUnits="pixels" resolution="240" resolutionUnits="pixels/inch" scale="true" resampleMethod="bicubic"/>
+      <action enabled="false" when="After Image Resize" set="Default Actions" name="Vignette (selection)"/>
+      <namingOptions startingSerial="1">Name,lowerCaseExtension</namingOptions>
+    </task>
+    <task enabled="true" subfolderName="Set 3" colorProfile="Same as Source">
+      <saveOptions fileSaveType="psd" psdAlphaChannels="true" psdEmbedColorProfile="true" psdLayers="true" psdMaximizeCompatibility="true"/>
+      <resizeOpts enabled="false"/>
+      <action enabled="false" when="After Image Resize" set="Default Actions" name="Vignette (selection)"/>
+      <namingOptions startingSerial="1">Name,lowerCaseExtension</namingOptions>
+    </task>
+  </taskList>
+  <preferences/>
+</ImageProcessorProSettings>

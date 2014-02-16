@@ -1,0 +1,300 @@
+Zoomify export template
+$%$.html
+
+<HTML>
+<BODY BGCOLOR=#000000>
+<DIV ALIGN="CENTER">
+
+<TABLE BGCOLOR=#999999 CELLPADDING=1 CELLSPACING=0 BORDER=0 WIDTH="$%$(BrowserWidth)" ALIGN="CENTER">
+  <TR>
+	<TD>
+	  <TABLE BGCOLOR=#000000 CELLPADDING=0 CELLSPACING=0 BORDER=0 WIDTH=100%>
+		<TR>
+		  <TD>
+		  	  <OBJECT CLASSID="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" CODEBASE="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" WIDTH="$%$(BrowserWidth)" HEIGHT="$%$(BrowserHeight)" ID="theMovie">
+                		<PARAM NAME="FlashVars" VALUE="zoomifyImagePath=$%$(TilePath)&zoomifyNavigatorVisible=false">
+                		<PARAM NAME="BGCOLOR" VALUE="#000000">
+                		<PARAM NAME="MENU" VALUE="FALSE">
+				<PARAM NAME="SRC" VALUE="$%$(TilePath)/../zoomifyViewer.swf">
+               			<EMBED FlashVars="zoomifyImagePath=$%$(TilePath)&zoomifyNavigatorVisible=false" SRC="$%$(TilePath)/../zoomifyViewer.swf" BGCOLOR="#000000" MENU="false" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"  WIDTH="$%$(BrowserWidth)" HEIGHT="$%$(BrowserHeight)" NAME="theMovie"></EMBED>
+             		 </OBJECT></TD>
+		</TR>
+	  </TABLE>
+	</TD>
+  </TR>
+</TABLE>
+
+<TABLE BGCOLOR=#000000 CELLPADDING=1 CELLSPACING=0 BORDER=0 WIDTH="$%$(BrowserWidth)" ALIGN="CENTER">
+  <TR>
+    <TD align="Right">
+      <Font size="1" face="arial" color="#999999">Powered by <a href="http://www.zoomify.com/" target="_blank"><Font color="#999999">Zoomify</Font></a></Font>
+    </TD>
+</TABLE>
+
+</DIV>
+</BODY>
+</HTML>
+
+$%$"ExportScript.jsx"
+//This code exports the current document as a folder of Zoomify tiles.
+function ExportTileAsJPEG(tileName, exportFolder, tileRect, quality, optimized, width, height, sharpen, useCache, clearCache)
+{
+	var exportDescriptor = new ActionDescriptor();
+	exportDescriptor.putPath( stringIDToTypeID( "file"), new File( exportFolder + "/" + tileName + ".jpg" ) );
+	
+	exportDescriptor.putInteger( stringIDToTypeID( "top"), tileRect.top);
+	exportDescriptor.putInteger( stringIDToTypeID( "left"), tileRect.left);
+	exportDescriptor.putInteger( stringIDToTypeID( "bottom"), tileRect.bottom);
+	exportDescriptor.putInteger( stringIDToTypeID( "right"), tileRect.right);
+	
+	exportDescriptor.putInteger( stringIDToTypeID( "width"), width);
+	exportDescriptor.putInteger( stringIDToTypeID( "height"), height);
+	
+	exportDescriptor.putInteger( stringIDToTypeID( "extendedQuality"), quality);
+	exportDescriptor.putBoolean( stringIDToTypeID( "optimized"), optimized);
+	exportDescriptor.putBoolean( stringIDToTypeID( "cache"), useCache);
+	exportDescriptor.putBoolean( stringIDToTypeID( "clearEvent"), clearCache);
+	
+	executeAction( stringIDToTypeID( "JPEGTileExport"), exportDescriptor, DialogModes.NO );
+}
+function MakeTileName(zoomifyLevel, zoomifyX, zoomifyY )
+{
+	var tileName = "";
+	
+	if (9999 < zoomifyLevel)
+		tileName += Math.floor(zoomifyLevel / 10000);
+		
+	if (999 < zoomifyLevel)
+		tileName += ((Math.floor(zoomifyLevel / 1000) % 10));
+		
+	if (99 < zoomifyLevel)
+		tileName += ((Math.floor(zoomifyLevel / 100) % 10));
+	
+	if (9 < zoomifyLevel)
+		tileName += ((Math.floor(zoomifyLevel / 10) % 10));
+		
+	tileName += ((zoomifyLevel % 10));
+	
+	tileName += ("-");
+	
+	if (9999 < zoomifyX)
+		tileName += (Math.floor(zoomifyX / 10000));
+		
+	if (999 < zoomifyX)
+		tileName += ((Math.floor(zoomifyX / 1000) % 10));
+		
+	if (99 < zoomifyX)
+		tileName += ((Math.floor(zoomifyX / 100) % 10));
+	
+	if (9 < zoomifyX)
+		tileName += ((Math.floor(zoomifyX / 10) % 10));
+		
+	tileName += ((zoomifyX % 10));
+	
+	tileName += ("-");
+	
+	if (9999 < zoomifyY)
+		tileName += (Math.floor(zoomifyY / 10000));
+		
+	if (999 < zoomifyY)
+		tileName += ((Math.floor(zoomifyY / 1000) % 10));
+		
+	if (99 < zoomifyY)
+		tileName += ((Math.floor(zoomifyY / 100) % 10));
+	
+	if (9 < zoomifyY)
+		tileName += ((Math.floor(zoomifyY / 10) % 10));
+		
+	tileName += ((zoomifyY % 10));
+	
+	//alert(tileName);
+	
+	return tileName;
+
+}
+
+function WriteStringToFile(outText, outPath)
+{
+	try 
+	{					
+		var logFile = File(outPath);	
+		logFile.open ("w");
+		logFile.write( outText );
+		logFile.close();
+	} catch (e) {
+		alert(e);
+	} finally {
+	}
+	return;
+}
+
+function CreateObjectContent()
+{
+	var viewerWidth = 400;
+	var viewerHeight = 300;
+	var tileSize = 256;
+	var tileName = "TestTile";
+	var exportFolderPath = Folder.desktop + "/Zoomify Export Test/";
+	var quality = 8;
+	var optimized = true;
+	var sharpen = true;
+	var useCache = false;  //This tells Photoshop to cache the scaled version of the image it uses to generate this tile.  We should set this to false on the very last tile to clear the cache
+	
+	
+	//Pick up our globals
+	if(typeof(gFolderString) != "undefined")
+		exportFolderPath = gFolderString;
+		
+	if(typeof(gQuality) != "undefined")
+		quality = gQuality;	
+		
+	if(typeof(gOptimized) != "undefined")
+		optimized = gOptimized;
+	
+	if(typeof(gViewerWidth) != "undefined")
+		viewerWidth = gViewerWidth;
+	
+	if(typeof(gViewerHeight) != "undefined")
+		viewerHeight = gViewerHeight;
+		
+	//alert(exportFolderPath);
+	var numLevels=0;
+	var imageWidths = new Array();
+	var imageHeights = new Array();
+	var xTiles = new Array();
+	var yTiles = new Array();
+	
+	var startRulerUnits = app.preferences.rulerUnits;
+	app.preferences.rulerUnits = Units.PIXELS;
+	
+	var baseWidth=Number(activeDocument.width);
+	var baseHeight=Number(activeDocument.height);
+	var currentWidth = baseWidth;
+	var currentHeight = baseHeight;
+	var numTiles = 0;
+	
+	while(currentHeight > tileSize || currentWidth > tileSize)
+	{
+		imageWidths[numLevels] = currentWidth;
+		imageHeights[numLevels] = currentHeight;
+		
+		xTiles[numLevels] = Math.floor((currentWidth + tileSize - 1) / (tileSize));
+		yTiles[numLevels] = Math.floor((currentHeight + tileSize - 1) / (tileSize));
+		
+		numTiles += xTiles[numLevels] * yTiles[numLevels];
+		
+		numLevels++;
+		currentHeight /= 2;
+		currentWidth /= 2;
+	}
+	
+	//The zero tile
+	imageWidths[numLevels] = currentWidth;
+	imageHeights[numLevels] = currentHeight;
+		
+	xTiles[numLevels] = Math.floor((currentWidth + tileSize - 1) / (tileSize));
+	yTiles[numLevels] = Math.floor((currentHeight + tileSize - 1) / (tileSize));
+	numTiles += xTiles[numLevels] * yTiles[numLevels];
+	
+	numLevels++;
+	
+	//alert(numLevels);
+	
+	currentWidth = baseWidth;
+	currentHeight = baseHeight;
+	
+	
+	var tileGroup, tileGroupPath, tileGroupFolder;
+	var tileScale = 1;	
+	var x,y,level;
+	var numGroups = Math.ceil(numTiles / 256);
+	var tilesPerGroup = numTiles % 256;
+	if(tilesPerGroup == 0)
+		tilesPerGroup = 256;
+	
+	var tileCounter = numTiles - xTiles[0] * yTiles[0];
+	var prevTileCounter;
+	var clearCache = false;
+	var tileRect = new Object();
+	var width = tileSize;
+	var height = tileSize;
+	var zoomifyLevel;
+	for(level = 0; level < numLevels; level++)
+		{
+		prevTileCounter = tileCounter;
+		for(y = 0; y < yTiles[level]; y++)
+			{
+			for(x = 0; x < xTiles[level]; x++)
+				{
+				
+				tileGroup = Math.floor(tileCounter/256);
+				tileGroupPath = exportFolderPath + "TileGroup" + tileGroup + "/";
+				tileGroupFolder = new Folder(tileGroupPath);
+				if(!tileGroupFolder.exists)
+					tileGroupFolder.create();
+					
+				zoomifyLevel = numLevels - level - 1;
+				tileName = MakeTileName(zoomifyLevel, x, y );
+				
+				//calc rect and clamp
+				width = tileSize;
+				height = tileSize;
+				
+				tileRect.top=tileSize*y;
+				tileRect.left=tileSize*x;
+				tileRect.right=(x+1)*tileSize;
+				tileRect.bottom=(y+1)*tileSize;
+				
+				if(tileRect.right > currentWidth)
+					{
+					width = tileSize - (tileRect.right - currentWidth);
+					tileRect.right = currentWidth;
+					}
+					
+				if(tileRect.bottom > currentHeight)
+					{
+					height = tileSize - (tileRect.bottom - currentHeight);
+					tileRect.bottom = currentHeight;
+					}
+				
+				tileRect.top *= tileScale;
+				tileRect.bottom *= tileScale;
+				tileRect.left *= tileScale;
+				tileRect.right *= tileScale;
+				
+				if(x == 0 && y == 0)
+					useCache = false;
+				else
+					useCache = true;
+				
+				ExportTileAsJPEG(tileName, tileGroupPath, tileRect, quality, optimized, width, height, sharpen, useCache, clearCache);
+				tileCounter++;
+				}
+			}
+		
+		currentHeight = Math.floor(currentHeight/2);
+		currentWidth = Math.floor(currentWidth/2);
+		tileScale *= 2;
+		tileCounter = prevTileCounter -  xTiles[level+1] * yTiles[level+1];
+		}
+		
+	//One last call to clear the cache
+	clearCache = true;
+	ExportTileAsJPEG(tileName, tileGroupPath, tileRect, quality, optimized, width, height, sharpen, useCache, clearCache);
+	
+	
+	var imageProperties = "<IMAGE_PROPERTIES WIDTH='" + baseWidth + "' HEIGHT='" + baseHeight + "' NUMTILES='" + numTiles + "' NUMIMAGES='1' VERSION='1.8' TILESIZE='256' />";
+	var propertiesFileName = exportFolderPath + "ImageProperties.xml";
+	WriteStringToFile(imageProperties, propertiesFileName);
+	
+	app.preferences.rulerUnits = startRulerUnits;
+}
+
+CreateObjectContent();
+
+//This line copies the zoomifyViewer.swf to the destination directory
+
+$%${zoomifyViewer.swf}
+
+
+

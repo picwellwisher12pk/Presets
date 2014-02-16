@@ -1,0 +1,27 @@
+{
+  "name": "generator-assets",
+  "version": "1.0.1",
+  "description": "Asset generation plug-in for Photoshop Generator",
+  "main": "main.js",
+  "generator-core-version": "~1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adobe-photoshop/generator-assets"
+  },
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "mkdirp": "~0.3.5",
+    "q": "0.9.6",
+    "tmp": "~0.0.20"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.5.4",
+    "nodeunit": "~0.8.1",
+    "grunt-contrib-nodeunit": "~0.2.0"
+  }
+}

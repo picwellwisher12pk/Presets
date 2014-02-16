@@ -1,0 +1,8 @@
+palette(name: '$$$/AdobeScript/Photomerge/Photomerge=Photomerge', width: 450, height: 80)
+{
+	group(horizontal: align_fill, placement: place_column)
+	{
+		static_text(horizontal: align_left, name: '$$$/AdobeScript/Shared/Photomerge/Blending=Blending Images...');
+		progress_bar(horizontal: align_fill, view_id: '_progress');
+	}
+}

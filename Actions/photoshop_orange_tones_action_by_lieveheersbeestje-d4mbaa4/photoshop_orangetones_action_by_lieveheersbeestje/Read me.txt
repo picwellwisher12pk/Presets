@@ -1,0 +1,14 @@
+Lieveheersbeestje Photoshop Actions V9 (V=Version)
+
+Please read the following lines thoroughly.
+* The actions are created with Photoshop CS2 and should be used with Photoshop CS versions only, I don't recommend other programs. These should work properly with CS2 or higher (tested with CS2 and CS6 Extended).
+* Now you have downloaded these, you can install it and use it with Photoshop.
+
+* Credit me if you use one or more of my actions, I would greatly appreciate it. Link back to http://lieveheersbeestje.org or http://lieveheersbeestje.deviantart.com
+* Do not copy! © Megan van der Elst
+
+/*-------------------------------
+© http://lieveheersbeestje.org
+-------------------------------*/
+
+Extra: http://lieveheersbeestje.org/how-do-i-install-and-use-a-photoshop-action/

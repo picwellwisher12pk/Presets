@@ -1,0 +1,88 @@
+dialog(child_vertical: align_fill, name: '$$$/AdobePlugin/Shared/Photomerge/Process/Name=Photomerge', placement: place_row, vertical: align_fill)
+{
+	cluster(horizontal: align_fill, name: '$$$/AdobePlugin/Shared/Photomerge/Scr/Layout=Layout', placement: place_column, vertical: align_fill)
+	{
+		group(horizontal: align_fill, placement: place_column)
+		{
+			radio(horizontal: align_left, name: '$$$/AdobePlugin/Shard/Photomerge/Scr/Auto=Auto', view_id: '_LOauto');
+			picture(resource_id: 'P_AutoAlign_Automatic_87x38.png');
+		}
+		group(horizontal: align_fill, placement: place_column)
+		{
+			radio(horizontal: align_left, name: '$$$/AdobePlugin/Shared/Photomerge/Scr/Perspective=Perspective', view_id: '_LOperspective');
+			picture(resource_id: 'P_AutoAlign_Perspective_87x38.png');
+		}
+		group(horizontal: align_fill, placement: place_column)
+		{
+			radio(horizontal: align_left, name: '$$$/AdobePlugin/Shared/Photomerge/Scr/Cylindrical=Cylindrical', view_id: '_LOcylindrical');
+			picture(resource_id: 'P_AutoAlign_Cylindrical_87x38.png');
+		}
+		group(horizontal: align_fill, placement: place_column)
+		{
+			radio(horizontal: align_left, name: '$$$/AdobePlugin/Shared/Photomerge/Scr/Spherical=Spherical', view_id: '_LOspherical');
+			picture(resource_id: 'P_AutoAlign_Spherical_87x38.png');
+		}
+		group(horizontal: align_fill, placement: place_column)
+		{
+			radio(horizontal: align_left, name: '$$$/AdobePlugin/Shard/Photomerge/Scr/Collage=Collage', view_id: '_LOcollage');
+			picture(resource_id: 'P_AutoAlign_Collage_87x38.png');
+		}
+		group(horizontal: align_fill, placement: place_column)
+		{
+			radio(horizontal: align_left, name: '$$$/AdobePlugin/Shard/Photomerge/Scr/Repos=Reposition', view_id: '_LOnormal');
+			picture(resource_id: 'P_AutoAlign_Reposition_87x38.png');
+		}
+		group(horizontal: align_fill, placement: place_column, view_id: '_PMInteractive')
+		{
+			radio(horizontal: align_left, name: '$$$/AdobePlugin/Shared/Photomerge/Scr/Interactive=Interactive Layout', view_id: '_LOinteractive');
+			picture(resource_id: 'P_AutoAlign_Interactive_87x38.png');
+		}
+	}
+	group(horizontal: align_fill, placement: place_column, vertical: align_fill)
+	{
+		cluster(horizontal: align_left, name: '$$$/AdobePlugin/Shared/Exposuremerge/FileSelectDialog/SourceFiles=Source Files', vertical: align_fill)
+		{
+			group(horizontal: align_left, margin_top: 4, placement: place_column, vertical: align_fill)
+			{
+				static_text(height: 34, horizontal: align_left, max_width: 340, multiline: true, name: '$$$/AdobePlugin/Shared/Photomerge/FileSelectDialog/ChooseTwo=Choose two or more files to merge into a panorama.', vertical: align_center, view_id: '_intro', width: 320);
+				group(horizontal: align_left, placement: place_row, vertical: align_fill)
+				{
+					group(margin_top: 3, placement: place_column, vertical: align_top)
+					{
+						static_text(name: '$$$/AdobePlugin/Shared/Exposuremerge/FileSelectDialog/Use=&Use:', vertical: align_bottom);
+					}
+					group(child_horizontal: align_left, horizontal: align_left, placement: place_column, vertical: align_fill)
+					{
+						popup_menu(horizontal: align_left, resource_id: 100, view_id: '_source');
+						group(horizontal: align_left, placement: place_row, vertical: align_fill)
+						{
+							listbox(height: 380, horizontal: align_left, item_id: 'multiselect: true', vertical: align_fill, view_id: '_fileList', width: 214);
+							group(horizontal: align_left, placement: place_column, vertical: align_top)
+							{
+								button(horizontal: align_fill, name: '$$$/AdobePlugin/Shared/Exposuremerge/FileSelectDialog/Browse=&Browse...', view_id: '_browse');
+								button(horizontal: align_fill, name: '$$$/AdobePlugin/Shared/Exposuremerge/FileSelectDialog/Remove=&Remove', view_id: '_remove');
+								button(name: '$$$/AdobePlugin/Shared/Exposuremerge/FileSelectDialog/AddOpen=Add Open &Files', view_id: '_addOpenDocs');
+							}
+						}
+					}
+				}
+				group(child_horizontal: align_left, horizontal: align_left, placement: place_column, vertical: align_fill)
+				{
+					checkbox(horizontal: align_left, name: '$$$/AdobePlugin/Shared/Photomerge/Scr/AdvBlend=Blend Images Together', vertical: align_bottom, view_id: '_advancedBlend');
+					checkbox(horizontal: align_left, name: '$$$/AdobePlugin/Shared/Photomerge/Scr/RemoveVignette=Vignette Removal', vertical: align_bottom, view_id: '_removeVignette');
+					checkbox(horizontal: align_left, name: '$$$/AdobePlugin/Shared/Photomerge/Scr/LensCorrection=Geometric Distortion Correction', vertical: align_bottom, view_id: '_useLensCorrection');
+				}
+			}
+		}
+	}
+	group(horizontal: align_right, margin_top: 5, placement: place_column, vertical: align_fill)
+	{
+		group(placement: place_column, vertical: align_top)
+		{
+			button(horizontal: align_fill, item_id: 'name: ok', name: '$$$/AdobePlugin/Shared/Exposuremerge/FileSelectDialog/OK=OK', view_id: '_ok');
+			button(horizontal: align_fill, item_id: 'name: cancel', name: '$$$/AdobePlugin/Shared/Exposuremerge/FileSelectDialog/Cancel=Cancel', view_id: '_cancel');
+			checkbox(name: 'invisible', view_id: '_align');
+			button(horizontal: align_fill, name: '$$$/AdobePlugin/Shared/Photomerge/LoadComp=&Load...', view_id: '_loadcomp');
+		}
+	}
+}

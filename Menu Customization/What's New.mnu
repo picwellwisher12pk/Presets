@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<photoshop-menu-settings version="2" filename="$$$/FileName/Presets/MenuCustomization/WhatsNew=What's New" modified="0">
+	<command kind="dynamic" name="com.adobe.behance.shareonbehance.html.extension" parentMenuID="2" menuType="0" hidden="0" color="5" />
+	<command kind="static" id="2326" parentMenuID="20" menuType="0" hidden="0" color="5" />
+	<command kind="static" id="4500" parentMenuID="3" menuType="0" hidden="0" color="5" />
+	<command kind="static" id="4501" parentMenuID="221" menuType="0" hidden="0" color="5" />
+	<command kind="static" id="4502" parentMenuID="221" menuType="0" hidden="0" color="5" />
+	<command kind="static" id="2326" parentMenuID="221" menuType="0" hidden="0" color="5" />
+	<command kind="static" id="4504" parentMenuID="221" menuType="0" hidden="0" color="5" />
+	<command kind="static" id="1030" parentMenuID="5" menuType="0" hidden="0" color="5" />
+	<command kind="static" id="1044" parentMenuID="5" menuType="0" hidden="0" color="5" />
+	<command kind="static" id="3439" parentMenuID="4" menuType="0" hidden="0" color="5" />
+	<command kind="static" id="9121" parentMenuID="23" menuType="0" hidden="0" color="5" />
+	<command kind="static" id="9122" parentMenuID="23" menuType="0" hidden="0" color="5" />
+	<command kind="static" id="1152" parentMenuID="7" menuType="0" hidden="0" color="5" />
+	<command kind="dynamic" name="Camera Raw Filter" parentMenuID="6" menuType="0" hidden="0" color="5" />
+	<command kind="dynamic" name="Liquify" parentMenuID="6" menuType="0" hidden="0" color="5" />
+	<command kind="dynamic" name="Oil Paint..." parentMenuID="6" menuType="0" hidden="0" color="5" />
+	<command kind="dynamic" name="Filter_SCN_Sharpen" parentMenuID="6" menuType="0" hidden="0" color="5" />
+	<command kind="dynamic" name="Shake Reduction..." parentMenuID="4308" menuType="0" hidden="0" color="5" />
+	<command kind="dynamic" name="Smart Sharpen..." parentMenuID="4308" menuType="0" hidden="0" color="5" />
+	<command kind="static" id="1190" parentMenuID="9" menuType="0" hidden="0" color="5" />
+	<command kind="static" id="1299" parentMenuID="9" menuType="0" hidden="0" color="5" />
+	<command kind="static" id="9067" parentMenuID="8" menuType="0" hidden="0" color="5" />
+	<command kind="static" id="6478" parentMenuID="8" menuType="0" hidden="0" color="5" />
+</photoshop-menu-settings>

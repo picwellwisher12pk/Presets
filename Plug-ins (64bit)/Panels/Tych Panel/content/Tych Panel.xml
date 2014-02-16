@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gpc defaultLocale="sv_SE" version="3" keySequence="95" currentLocale="sv_SE">
+  <product appid="PHSP" version="13" name="Photoshop CS6"/>
+  <target id="PHSP-13"/>
+  <ConfiguratorPanel name="Tych Panel" width="210" height="160" init="doInit" close="doClose" persistent="False" extensionId="com.configurator.extension" extensionVersion="2.1.0" menuName="Tych Panel" maxWidth="210" maxHeight="160" normalIcon="res/icon.png">
+    <extensionDescription><![CDATA[The ultimate diptych, triptych and n-tych automation tool for Adobe Photoshop.]]></extensionDescription>
+    <extensionAuthor><![CDATA[Reimund Trost]]></extensionAuthor>
+    <onInit><![CDATA[]]></onInit>
+    <aboutBox><![CDATA[]]></aboutBox>
+    <onClose><![CDATA[]]></onClose>
+    <eventListeners>
+      <function id="doInit" actionType="jsfunction" jsFunctionName="invoke_script">
+        <param id="onInit"/>
+      </function>
+      <function id="doClose" actionType="jsfunction" jsFunctionName="invoke_script">
+        <param id="onClose"/>
+      </function>
+    </eventListeners>
+    <canvas _itemId="container_canvas" toolTip="$$$/Configurator/Container/Canvas/desc" label="$$$/Configurator/key_###8" width="210" height="150" cfgVisible="$$$/Configurator/Attribute/visible/value###9" x="0" y="0" top="0" bottom="0" left="0" right="0">
+      <text _itemId="widget_text" toolTip="$$$/Configurator/Widget/Text/desc" styleName="scopeTextArea" width="58" height="20" backgroundAlpha="0" cfgVisible="$$$/Configurator/Attribute/visible/value###51" fontSize="10" fontWeight="normal" fontStyle="normal" textDecoration="none" textAlign="left" backgroundColor="16777215" borderColor="12040892" borderStyle="none" borderThickness="0" x="10" y="10">
+        <text><![CDATA[$$$/Configurator/key_###52]]></text>
+      </text>
+      <text _itemId="widget_text" toolTip="$$$/Configurator/Widget/Text/desc###57" styleName="scopeTextArea" width="71" height="20" backgroundAlpha="0" cfgVisible="$$$/Configurator/Attribute/visible/value###59" fontSize="10" fontWeight="normal" fontStyle="normal" textDecoration="none" textAlign="center" backgroundColor="16777215" borderColor="12040892" borderStyle="none" borderThickness="0" x="101" y="10">
+        <text><![CDATA[$$$/Configurator/key_###60]]></text>
+      </text>
+      <ps_script _itemId="ps_actionscript_script" label="$$$/Configurator/ActionScript/Script/name###81" toolTip="$$$/Configurator/ActionScript/Script/desc###82" cfgVisible="$$$/Configurator/Attribute/visible/value###83" click="onClick" icon="ps_script" overIcon="ps_script_r" showIcon="true" mouseUpIcon="res/button-add-row-top.png" mouseDownSkinIcon="res/button-add-row-top-down.png" x="10" y="31" width="88" height="25">
+        <script><![CDATA[var called_from_bridge = false;$.evalFile(app.path + '/Presets/Scripts/Tych%20Panel/Tych%20Panel%20Only/tych.jsx');t.layout_and_composite(ROW, TOP);]]></script>
+        <eventListeners>
+          <function id="onClick" actionType="jsfunction" jsFunctionName="ps_invoke_script">
+            <param id="script"/>
+          </function>
+        </eventListeners>
+      </ps_script>
+      <ps_script _itemId="ps_actionscript_script" label="$$$/Configurator/ActionScript/Script/name###84" toolTip="$$$/Configurator/ActionScript/Script/desc###85" cfgVisible="$$$/Configurator/Attribute/visible/value###86" click="onClick" icon="ps_script" overIcon="ps_script_r" showIcon="true" mouseUpIcon="res/button-add-row-bottom.png" mouseDownSkinIcon="res/button-add-row-bottom-down.png" x="10" y="59" width="88" height="25">
+        <script><![CDATA[var called_from_bridge = false;$.evalFile(app.path + '/Presets/Scripts/Tych%20Panel/Tych%20Panel%20Only/tych.jsx');t.layout_and_composite(ROW, BOTTOM);]]></script>
+        <eventListeners>
+          <function id="onClick" actionType="jsfunction" jsFunctionName="ps_invoke_script">
+            <param id="script"/>
+          </function>
+        </eventListeners>
+      </ps_script>
+      <ps_script _itemId="ps_actionscript_script" label="$$$/Configurator/ActionScript/Script/name###87" toolTip="$$$/Configurator/ActionScript/Script/desc###88" cfgVisible="$$$/Configurator/Attribute/visible/value###89" click="onClick" icon="ps_script" overIcon="ps_script_r" showIcon="true" mouseUpIcon="res/button-add-row-left.png" mouseDownSkinIcon="res/button-add-row-left-down.png" x="102" y="31" width="88" height="25">
+        <script><![CDATA[var called_from_bridge = false;$.evalFile(app.path + '/Presets/Scripts/Tych%20Panel/Tych%20Panel%20Only/tych.jsx');t.layout_and_composite(COLUMN, LEFT);]]></script>
+        <eventListeners>
+          <function id="onClick" actionType="jsfunction" jsFunctionName="ps_invoke_script">
+            <param id="script"/>
+          </function>
+        </eventListeners>
+      </ps_script>
+      <ps_script _itemId="ps_actionscript_script" label="$$$/Configurator/ActionScript/Script/name###90" toolTip="$$$/Configurator/ActionScript/Script/desc###91" cfgVisible="$$$/Configurator/Attribute/visible/value###92" click="onClick" icon="ps_script" overIcon="ps_script_r" showIcon="true" mouseUpIcon="res/button-add-row-right.png" mouseDownSkinIcon="res/button-add-row-right-down.png" x="102" y="59" width="88" height="25">
+        <script><![CDATA[var called_from_bridge = false;$.evalFile(app.path + '/Presets/Scripts/Tych%20Panel/Tych%20Panel%20Only/tych.jsx');t.layout_and_composite(COLUMN, RIGHT);]]></script>
+        <eventListeners>
+          <function id="onClick" actionType="jsfunction" jsFunctionName="ps_invoke_script">
+            <param id="script"/>
+          </function>
+        </eventListeners>
+      </ps_script>
+      <ps_script _itemId="ps_actionscript_script" label="$$$/Configurator/ActionScript/Script/name###93" toolTip="$$$/Configurator/ActionScript/Script/desc###94" cfgVisible="$$$/Configurator/Attribute/visible/value###95" click="onClick" icon="ps_script" overIcon="ps_script_r" showIcon="true" mouseUpIcon="res/button-options.png" mouseDownSkinIcon="res/button-options-down.png" x="10" y="113" width="88" height="25">
+        <script><![CDATA[$.evalFile(app.path + '/Presets/Scripts/Tych%20Panel/Tych%20Panel%20Options.jsx');]]></script>
+        <eventListeners>
+          <function id="onClick" actionType="jsfunction" jsFunctionName="ps_invoke_script">
+            <param id="script"/>
+          </function>
+        </eventListeners>
+      </ps_script>
+    </canvas>
+  </ConfiguratorPanel>
+  <images>
+    <image id="ps_script" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script"/>
+    <image id="ps_script_r" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_r"/>
+    <image id="ps_script" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script"/>
+    <image id="ps_script_r" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_r"/>
+    <image id="ps_script" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script"/>
+    <image id="ps_script_r" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_r"/>
+    <image id="ps_script" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script"/>
+    <image id="ps_script_r" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_r"/>
+    <image id="ps_script" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script"/>
+    <image id="ps_script_r" swf="bundles/PHSP-13/PHSP13Bundle.swf_" className="PHSP13Bundle" varName="ps_script_r"/>
+  </images>
+  <scripts/>
+  <elements>
+    <element id="ConfiguratorPanel" classRT="com.adobe.configurator2.component.panel.PanelRuntime">
+      <attr id="name" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="minWidth" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="minHeight" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="maxWidth" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="maxHeight" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="persistent" meta="Other" translate="y"/>
+      <attr id="extensionId" meta="Other" translate="y"/>
+      <attr id="extensionVersion" meta="Other" translate="y"/>
+      <attr id="extensionAuthor" meta="Other" translate="y"/>
+      <attr id="extensionDescription" meta="Other" translate="y"/>
+      <attr id="menuName" meta="Other" translate="y"/>
+      <attr id="init" meta="EVENT" translate="y"/>
+      <attr id="close" meta="EVENT" translate="y"/>
+      <attr id="onInit" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="aboutBox" meta="UI_ACCESSOR" localize="y" translate="y"/>
+      <attr id="flyoutMenuAbout" meta="Other" localize="y" translate="y"/>
+      <attr id="normalIcon" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="rollOverIcon" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="darkNormalIcon" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="width" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="height" meta="UI_ACCESSOR" translate="y"/>
+    </element>
+    <element id="canvas" classRT="mx.containers.Canvas">
+      <attr id="label" meta="UI_ACCESSOR" localize="y" translate="y"/>
+      <attr id="toolTip" meta="UI_ACCESSOR" localize="y" translate="y"/>
+      <attr id="top" meta="UI_STYLE" translate="y"/>
+      <attr id="bottom" meta="UI_STYLE" translate="y"/>
+      <attr id="left" meta="UI_STYLE" translate="y"/>
+      <attr id="right" meta="UI_STYLE" translate="y"/>
+      <attr id="horizontalCenter" meta="UI_STYLE" translate="y"/>
+      <attr id="verticalCenter" meta="UI_STYLE" translate="y"/>
+      <attr id="x" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="y" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="cfgVisible" meta="UI_ACCESSOR" localize="y"/>
+      <attr id="width" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="height" meta="UI_ACCESSOR" translate="y"/>
+    </element>
+    <element id="text" classRT="com.adobe.configurator2.component.TextAreaRuntime">
+      <attr id="text" meta="UI_ACCESSOR" localize="y" translate="y"/>
+      <attr id="toolTip" meta="UI_ACCESSOR" localize="y" translate="y"/>
+      <attr id="styleName" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="fontFamily" meta="UI_STYLE" localize="y" translate="y"/>
+      <attr id="fontSize" meta="UI_STYLE" localize="y" translate="y"/>
+      <attr id="color" meta="UI_STYLE" localize="y" translate="y"/>
+      <attr id="fontWeight" meta="UI_STYLE" localize="y" translate="y"/>
+      <attr id="fontStyle" meta="UI_STYLE" localize="y" translate="y"/>
+      <attr id="textDecoration" meta="UI_STYLE" localize="y" translate="y"/>
+      <attr id="textAlign" meta="UI_STYLE" localize="y" translate="y"/>
+      <attr id="backgroundColor" meta="UI_STYLE" localize="y" translate="y"/>
+      <attr id="backgroundAlpha" meta="UI_STYLE" localize="y" translate="y"/>
+      <attr id="borderColor" meta="UI_STYLE" localize="y" translate="y"/>
+      <attr id="borderStyle" meta="UI_STYLE" localize="y" translate="y"/>
+      <attr id="borderThickness" meta="UI_STYLE" localize="y" translate="y"/>
+      <attr id="dropShadowEnabled" meta="UI_STYLE" localize="y" translate="y"/>
+      <attr id="top" meta="UI_STYLE" translate="y"/>
+      <attr id="bottom" meta="UI_STYLE" translate="y"/>
+      <attr id="left" meta="UI_STYLE" translate="y"/>
+      <attr id="right" meta="UI_STYLE" translate="y"/>
+      <attr id="horizontalCenter" meta="UI_STYLE" translate="y"/>
+      <attr id="verticalCenter" meta="UI_STYLE" translate="y"/>
+      <attr id="x" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="y" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="cfgVisible" meta="UI_ACCESSOR" localize="y"/>
+      <attr id="width" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="height" meta="UI_ACCESSOR" translate="y"/>
+    </element>
+    <element id="ps_script" classRT="com.adobe.configurator2.component.CustomButtonRuntime">
+      <attr id="script" meta="OTHER" localize="y" translate="y"/>
+      <attr id="icon" meta="UI_STYLE" translate="y"/>
+      <attr id="label" meta="UI_ACCESSOR" localize="y" translate="y"/>
+      <attr id="toolTip" meta="UI_ACCESSOR" localize="y" translate="y"/>
+      <attr id="click" meta="EVENT" translate="y"/>
+      <attr id="showIcon" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="mouseUpIcon" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="mouseOverIcon" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="mouseDownSkinIcon" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="top" meta="UI_STYLE" translate="y"/>
+      <attr id="bottom" meta="UI_STYLE" translate="y"/>
+      <attr id="left" meta="UI_STYLE" translate="y"/>
+      <attr id="right" meta="UI_STYLE" translate="y"/>
+      <attr id="horizontalCenter" meta="UI_STYLE" translate="y"/>
+      <attr id="verticalCenter" meta="UI_STYLE" translate="y"/>
+      <attr id="x" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="y" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="cfgVisible" meta="UI_ACCESSOR" localize="y"/>
+      <attr id="width" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="height" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="top" meta="UI_STYLE" translate="y"/>
+      <attr id="bottom" meta="UI_STYLE" translate="y"/>
+      <attr id="left" meta="UI_STYLE" translate="y"/>
+      <attr id="right" meta="UI_STYLE" translate="y"/>
+      <attr id="horizontalCenter" meta="UI_STYLE" translate="y"/>
+      <attr id="verticalCenter" meta="UI_STYLE" translate="y"/>
+      <attr id="x" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="y" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="cfgVisible" meta="UI_ACCESSOR" localize="y"/>
+      <attr id="width" meta="UI_ACCESSOR" translate="y"/>
+      <attr id="height" meta="UI_ACCESSOR" translate="y"/>
+    </element>
+  </elements>
+  <properties>
+    <property id="LocaleSearchPath2">${HostProductRoot}/Locales/${LocaleID}/Support Files/Panels/${PanelName}/dictionary.xml</property>
+    <property id="LocaleSearchPath1">${HostProductRoot}/Locales/${LocaleID}/Support Files/Panels/fsPanels.xml</property>
+  </properties>
+</gpc>

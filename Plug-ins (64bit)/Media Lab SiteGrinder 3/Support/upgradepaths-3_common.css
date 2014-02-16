@@ -1,0 +1,227 @@
+a ins  {
+   text-decoration: none;
+}
+
+*:focus  {
+   outline-style: none;
+}
+
+#macosx101andlatersupportp li,
+#windowsxpandlatersupportp li,
+#windowsxpandlatersupportp p,
+#macosx101andlatersupportp p  {
+   font: normal bold 16px/19px Arial, Helvetica, sans-serif;
+   padding: 0px;
+   margin: 0px;
+   color: #000000;
+   text-decoration: none;
+   font-variant: normal;
+   letter-spacing: 0px;
+   text-indent: 0px;
+   text-align: center;
+}
+
+#i3teachyourselfsitegrinde p,
+#thankyoufordownloadingsit p,
+#thankyoufordownloadingsit li,
+#i3teachyourselfsitegrinde li  {
+   font: normal 18px/22px Arial, Helvetica, sans-serif;
+   margin: 0px;
+   padding-bottom: 15px;
+   padding-top: 0px;
+   padding-right: 0px;
+   text-indent: 0px;
+   text-align: left;
+   letter-spacing: 0px;
+   font-variant: normal;
+   text-decoration: none;
+   color: #888888;
+}
+
+#release300march212010 p,
+#upgrades li,
+#release300march212010 li,
+#sitegrinder p,
+#upgrades p,
+#sitegrinder li  {
+   padding: 0px;
+   margin: 0px;
+   text-indent: 0px;
+   color: #FFFFFF;
+   text-decoration: none;
+   font-variant: normal;
+   letter-spacing: 0px;
+   font-style: normal;
+   font-weight: normal;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+#controlbutton,
+#videosbutton,
+#commercebutton  {
+   font: bold 14px/17px Arial, Helvetica, sans-serif;
+   letter-spacing: 1px;
+   position: absolute;
+   top: 95px;
+   z-index: 4;
+   height: 34px;
+}
+
+#buynowbutton,
+#featuresbutton,
+#supportbutton  {
+   font: bold 14px/17px Arial, Helvetica, sans-serif;
+   letter-spacing: 1px;
+   position: absolute;
+   top: 95px;
+   z-index: 3;
+   height: 34px;
+}
+
+#supportbutton a ins,
+#featuresbutton a ins  {
+   text-decoration: none;
+   position: relative;
+   left: 5px;
+   top: 13px;
+   height: 14px;
+}
+
+#commercebutton a ins,
+#buynowbutton a ins  {
+   text-decoration: none;
+   position: relative;
+   left: 3px;
+   top: 13px;
+   height: 14px;
+}
+
+#i3teachyourselfsitegrinde li  {
+   font-weight: bold;
+   padding-left: 50px;
+}
+
+#thankyoufordownloadingsit li  {
+   padding-left: 0px;
+   font-weight: normal;
+}
+
+#thankyoufordownloadingsit p  {
+   padding-left: 0px;
+   font-weight: normal;
+}
+
+#i3teachyourselfsitegrinde p  {
+   font-weight: bold;
+   padding-left: 50px;
+}
+
+#release300march212010 li  {
+   font-size: 12px;
+   line-height: 14px;
+   text-align: right;
+}
+
+#release300march212010 p  {
+   font-size: 12px;
+   line-height: 14px;
+   text-align: right;
+}
+
+#featuresbutton a ins  {
+   width: 85px;
+}
+
+#commercebutton a ins  {
+   width: 94px;
+}
+
+#supportbutton a ins  {
+   width: 79px;
+}
+
+#ridefooter,
+.footer  {
+   width: 100%;
+   position: relative;
+   clear: left;
+   display: block;
+}
+
+#buynowbutton a ins  {
+   width: 76px;
+}
+
+#sitegrinder li  {
+   text-align: center;
+   font-size: 36px;
+   line-height: 43px;
+}
+
+#commercebutton  {
+   width: 101px;
+   left: 528px;
+}
+
+#featuresbutton  {
+   width: 92px;
+   left: 196px;
+}
+
+#supportbutton  {
+   width: 89px;
+   left: 871px;
+}
+
+#controlbutton  {
+   width: 84px;
+   left: 705px;
+}
+
+#sitegrinder p  {
+   text-align: center;
+   font-size: 36px;
+   line-height: 43px;
+}
+
+#buynowbutton  {
+   width: 80px;
+   left: 33px;
+}
+
+#videosbutton  {
+   width: 78px;
+   left: 371px;
+}
+
+#upgrades li  {
+   text-align: left;
+   font-size: 36px;
+   line-height: 43px;
+}
+
+#upgrades p  {
+   text-align: left;
+   font-size: 36px;
+   line-height: 43px;
+}
+
+#ridefooter  {
+   font-size: 0px;
+}
+
+.cCECECE a  {
+   color: #CECECE;
+}
+
+.flow  {
+   position: relative;
+   display: block;
+   z-index: 2;
+   width: 100%;
+}
+
+a.nm  {
+   background-position: 0px 0px;
+}
+

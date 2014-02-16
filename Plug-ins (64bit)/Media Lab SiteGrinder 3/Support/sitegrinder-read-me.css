@@ -1,0 +1,348 @@
+#upgrades p a,
+#windowsxpandlatersupportp p a,
+#i3teachyourselfsitegrinde p a,
+#thankyoufordownloadingsit p a,
+#macosx101andlatersupportp p a,
+#release300march212010 p a,
+#sitegrinder p a  {
+   display: inline;
+}
+
+#commercebutton a.nmh,
+#commercebutton a:hover  {
+   background-position: -101px 0%;
+}
+
+#featuresbutton a:hover,
+#featuresbutton a.nmh  {
+   background-position: -92px 0%;
+}
+
+#supportbutton a:hover,
+#supportbutton a.nmh  {
+   background-position: -89px 0%;
+}
+
+#controlbutton a.nmh,
+#controlbutton a:hover  {
+   background-position: -84px 0%;
+}
+
+#videosbutton a.nmh,
+#videosbutton a:hover  {
+   background-position: -78px 0%;
+}
+
+#buynowbutton a:hover,
+#buynowbutton a.nmh  {
+   background-position: -80px 0%;
+}
+
+#i3teachyourselfsitegrinde  {
+   width: 946px;
+   margin-left: 8px;
+   margin-right: 0px;
+   margin-top: 24px;
+   margin-bottom: 34px;
+}
+
+#thankyoufordownloadingsit  {
+   width: 946px;
+   margin-left: 8px;
+   margin-right: 0px;
+   margin-top: 17px;
+   margin-bottom: 0px;
+}
+
+#macosx101andlatersupportp  {
+   width: 428px;
+   margin-left: 57px;
+   margin-right: 0px;
+   margin-top: 14px;
+   margin-bottom: 0px;
+}
+
+#windowsxpandlatersupportp  {
+   width: 375px;
+   margin-left: 26px;
+   margin-right: 0px;
+   margin-top: 14px;
+   margin-bottom: 0px;
+}
+
+#featuresbutton a:active  {
+   background-position: -184px 0%;
+}
+
+#commercebutton a:active  {
+   background-position: -202px 0%;
+}
+
+#supportbutton a:active  {
+   background-position: -178px 0%;
+}
+
+#controlbutton a:active  {
+   background-position: -168px 0%;
+}
+
+#videosbutton a:active  {
+   background-position: -156px 0%;
+}
+
+#buynowbutton a:active  {
+   background-position: -160px 0%;
+}
+
+#release300march212010  {
+	position: absolute;
+	left: 788px;
+	top: 194px;
+	z-index: 4;
+	width: 171px;
+	height: 46px;
+}
+
+#controlbutton a ins  {
+   text-decoration: none;
+   position: relative;
+   left: 4px;
+   top: 13px;
+   width: 78px;
+   height: 14px;
+}
+
+#videosbutton a ins  {
+   text-decoration: none;
+   position: relative;
+   left: 6px;
+   top: 14px;
+   width: 61px;
+   height: 14px;
+}
+
+#featuresbutton a  {
+   background-image: url(sg_sitegrinder-read-me_media/featuresbutton.gif);
+   background-repeat: no-repeat;
+   display: block;
+   width: 92px;
+   height: 34px;
+}
+
+#commercebutton a  {
+   background-image: url(sg_sitegrinder-read-me_media/commercebutton.gif);
+   background-repeat: no-repeat;
+   display: block;
+   width: 101px;
+   height: 34px;
+}
+
+#controlbutton a  {
+   background-image: url(sg_sitegrinder-read-me_media/controlbutton.gif);
+   background-repeat: no-repeat;
+   display: block;
+   width: 84px;
+   height: 34px;
+}
+
+#supportbutton a  {
+   background-image: url(sg_sitegrinder-read-me_media/supportbutton.gif);
+   background-repeat: no-repeat;
+   display: block;
+   width: 89px;
+   height: 34px;
+}
+
+#toplinesnomerge  {
+   position: absolute;
+   left: 344px;
+   top: 5px;
+   z-index: 3;
+   width: 511px;
+   height: 103px;
+   background-image: url(sg_sitegrinder-read-me_media/toplinesnomerge.gif);
+   background-repeat: no-repeat;
+}
+
+#videosbutton a  {
+   background-image: url(sg_sitegrinder-read-me_media/videosbutton.gif);
+   background-repeat: no-repeat;
+   display: block;
+   width: 78px;
+   height: 34px;
+}
+
+#upgradescolumn  {
+   min-height: 818px;
+   width: 963px;
+   margin-left: 6px;
+   margin-right: 0px;
+   margin-top: 244px;
+   margin-bottom: 0px;
+}
+
+#buynowbutton a  {
+   background-image: url(sg_sitegrinder-read-me_media/buynowbutton.gif);
+   background-repeat: no-repeat;
+   display: block;
+   width: 80px;
+   height: 34px;
+}
+
+#mllogobutton a  {
+   background-image: url(sg_sitegrinder-read-me_media/mllogobutton.gif);
+   background-repeat: no-repeat;
+   display: block;
+   height: 42px;
+   width: 175px;
+   font-size: 42px;
+   line-height: 42px;
+}
+
+#mllogobutton  {
+   position: absolute;
+   left: 27px;
+   top: 26px;
+   z-index: 3;
+   width: 175px;
+   height: 42px;
+}
+
+#mllogofooter  {
+   position: absolute;
+   left: 6px;
+   top: 29px;
+   z-index: 3;
+   width: 967px;
+   height: 123px;
+   background-image: url(sg_sitegrinder-read-me_media/mllogofooter.gif);
+   background-repeat: no-repeat;
+}
+
+#innerfooter  {
+   width: 977px;
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   height: 152px;
+   background-color: transparent;
+   background-image: url(sg_sitegrinder-read-me_media/footerbackground.gif);
+   background-repeat: repeat-x;
+}
+
+#sitegrinder  {
+   position: absolute;
+   left: 16px;
+   top: 173px;
+   z-index: 4;
+   width: 195px;
+}
+
+#upgrades  {
+   position: absolute;
+   left: 297px;
+   top: 173px;
+   z-index: 4;
+   width: 243px;
+}
+
+#page_bkg  {
+   position: absolute;
+   width: 977px;
+   height: 1221px;
+   left: 0px;
+   top: 0px;
+   display: block;
+   z-index: 1;
+}
+
+#footer  {
+   background-color: transparent;
+   background-image: url(sg_sitegrinder-read-me_media/footerbackground.gif);
+   background-repeat: repeat-x;
+   height: 152px;
+   position: absolute;
+   bottom: 0px;
+   margin: 0px;
+   padding: 0px;
+   display: block;
+   width: 100%;
+}
+
+#page  {
+   height: 1221px;
+   width: 977px;
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+
+#top  {
+   min-height: 100%;
+   width: 100%;
+   position: absolute;
+}
+
+#i3  {
+   position: absolute;
+   left: 21px;
+   top: 150px;
+   z-index: 3;
+   width: 942px;
+   height: 89px;
+   background-image: url(sg_sitegrinder-read-me_media/i3.gif);
+   background-repeat: no-repeat;
+}
+
+.divider  {
+   clear: left;
+   display: block;
+}
+
+.col_bg  {
+   position: absolute;
+   z-index: 1;
+   left: 0px;
+   top: 0px;
+   width: 100%;
+}
+
+.column  {
+   padding: 0px;
+   margin: 0px;
+   float: left;
+   position: relative;
+   display: inline;
+}
+
+body, p,
+h4,
+h3,
+h2,
+h6,
+h1,
+h5  {
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+body  {
+   background-color: #FFFFFF;
+   background-image: url(sg_sitegrinder-read-me_media/browserbackground.gif);
+   background-repeat: repeat-x;
+   background-attachment: scroll;
+   background-position: center top;
+   margin-left: 0px;
+   margin-right: 0px;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   padding-left: 0px;
+   padding-right: 0px;
+   padding-top: 0px;
+   padding-bottom: 0px;
+   height: 100%;
+   -webkit-text-size-adjust: none;
+}
